@@ -1,0 +1,113 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+#ppPresentation{
+    clip-path: circle(30% at 50% 50%);
+}
+
+#imgWrap{
+    position: absolute;
+    top: 30%;
+    width: calc(1920px*0.40);
+    height: calc(1080px*0.40);
+    display: flex;
+    filter: drop-shadow(0px 1px 3px black);
+}
+
+#titlePF{
+    position: absolute;
+    text-align: left;
+    right: 5%;
+    top: 15%;
+    width: 700px;
+    word-wrap: normal;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+#presentationText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+@keyframes wave{
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+   100% { transform: rotate( 0.0deg) }
+}
+
+.animatedHand{
+    left: 30px;
+    display: flex;
+    font-size: x-large;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transform-origin: 70% 70%; 
+    display: inline-block;
+}
+#contentsTable{
+    position: absolute;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    right: 10%;
+    top: 50%;
+    width: 400px;
+    word-wrap: normal;
+}
+#contentsList{
+    list-style: none;
+}
+li{
+    margin-bottom: 20px;
+}
+h2{
+    margin: 0px;
+    font-size: 48px;
+    margin-left: 15px;
+}
+a{
+    color: black;
+}
+a:link{
+    text-decoration: none;
+    image-orientation: 360deg;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.page{
+    height: 950px;
+    position: relative;
+}
+
+.titlePage{
+    position: absolute;
+    display: flex;
+    top: 5%;
+    left: 5%;
+}
+
+#scrollToTop{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width:100px;
+    height:100px;
+    z-index: 1;
+}
+img{
+    width: 100%;
+}
