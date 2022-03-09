@@ -39,7 +39,7 @@ function Presentation({name,pp}){
 ReactDOM.render(
     <Presentation 
         name='Guillaume FAURE' 
-        pp='./public/LofiWallpaper3.png'
+        pp='../assets/LofiWallpaper3.png'
     />,
      document.querySelector('#presentationPage')
 )
