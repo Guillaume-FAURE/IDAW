@@ -5,32 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js" defer></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" defer></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="./dist/index.js" defer type="text/babel"></script>
     <title>Document</title>
 </head>
 <body>
-    <a href="#contentsPage" id="scrollToTop">
+    <a href="#presentationPage" id="scrollToTop">
         <img id="arrowImg" src="./public/arrowToTop.png" alt="top">
     </a>
-    <div id="contentsPage" class="page">
-        <div id="titlePF">
-            <h1>PortFolio Guillaume-FAURE</h1>
-            <p id="presentationText"> Hello <span class="animatedHand">&#128075</span><br> I'm currently a junior web developper full stack in 2nd year at the IMT-Nord-Europe in France &#128187</p>
-        </div>
-        
-        <div id="imgWrap">
-            <img  id="ppPresentation" src="./public/LofiWallpaper3.png" alt="photo profil">
-        </div>
-        <div id="contentsTable">
-            <h2>Contents</h2>
-            <ul id="contentsList">
-                <li><a href="#projects" class="contents">Projects</a></li>
-                <li><a href="#technos" class="contents">Techno I use</a></li>
-                <li><a href="#aboutMe" class="contents">About me</a></li>
-                <li><a href="./public/Resume-GuillaumeFAURE-eng.pdf" class="contents" target="blank">Resume</a></li>
-                <li><a href="#contact" class="contents">Contact</a></li>            
-            </ul>
-        </div>
-    </div>
+    <div id="presentationPage" class="page"></div>
     <div id="projects" class="page">
         <h1 class="titlePage">Projects</h1>
     </div>

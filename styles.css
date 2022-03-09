@@ -89,14 +89,14 @@ a:hover{
 }
 
 .page{
-    height: 950px;
+    height: 880px;
     position: relative;
 }
 
 .titlePage{
     position: absolute;
     display: flex;
-    top: 5%;
+    top: 2%;
     left: 5%;
 }
 
@@ -110,4 +110,29 @@ a:hover{
 }
 img{
     width: 100%;
+}
+#aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hobbies{
+    display: inline-flex;
+    width: 70%;
+    height: 70%;
+    flex-direction: row;
+    border-spacing: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.column{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hobbyDiv{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    background-color: red;
 }
